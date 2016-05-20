@@ -2918,8 +2918,8 @@ public class SAXDigiDocFactory
 			}
 			if (m_sbCollectChars != null) {
 				//m_sbCollectChars.append(s);
-				if(m_logger.isDebugEnabled() && m_sbCollectChars.indexOf("SignedInfo") != -1)
-				  m_logger.debug("IN: \'" + s + "\' escaped: \'" + ConvertUtils.escapeTextNode(s) + "\'");
+				// if(m_logger.isDebugEnabled() && m_sbCollectChars.indexOf("SignedInfo") != -1)
+				//   m_logger.debug("IN: \'" + s + "\' escaped: \'" + ConvertUtils.escapeTextNode(s) + "\'");
 				m_sbCollectChars.append(ConvertUtils.escapeTextNode(s));
 			}
 			if (m_sbCollectSignature != null)
